@@ -1,400 +1,378 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:clickable="true"
-                android:background="@color/back_ground_light_grey"
-                android:orientation="vertical">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground_light_grey"
+    android:clickable="true">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_submit"
-        android:layout_alignParentTop="true">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/back_ground_title_grey"
-                android:padding="@dimen/_5dp"
-                android:text="@string/all_invoice"
-                android:textStyle="bold" />
+                android:layout_marginTop="@dimen/all_margin_medium">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/bg_edt_create_order_step2"
-                android:orientation="horizontal"
-                android:padding="@dimen/_10dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginRight="@dimen/_10dp"
-                    android:paddingLeft="@dimen/_3dp"
-                    android:src="@drawable/ic_order_grey_24dp" />
-
-                <android.support.design.widget.TextInputLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <android.support.design.widget.TextInputEditText
-                        android:id="@+id/edt_order_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:background="@null"
-                        android:hint="@string/text_order_name"
-                        android:inputType="text" />
-                </android.support.design.widget.TextInputLayout>
-            </LinearLayout>
-
-            <View style="@style/divider_item_create_order" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/bg_edt_create_order_step2"
-                android:orientation="horizontal"
-                android:padding="@dimen/_10dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginRight="@dimen/_10dp"
-                    android:paddingLeft="@dimen/_3dp"
-                    android:src="@drawable/ic_weight_grey_24dp" />
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="6">
-
-                    <android.support.design.widget.TextInputEditText
-                        android:id="@+id/edt_order_weight"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:background="@null"
-                        android:hint="@string/text_order_weight"
-                        android:inputType="numberDecimal" />
-                </android.support.design.widget.TextInputLayout>
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/invoice_weight_unit" />
-            </LinearLayout>
-
-            <View style="@style/divider_item_create_order" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/bg_edt_create_order_step2"
-                android:orientation="horizontal"
-                android:padding="@dimen/_10dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginRight="@dimen/_10dp"
-                    android:paddingLeft="@dimen/_3dp"
-                    android:src="@drawable/ic_money_grey_24dp" />
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="6">
-
-                    <android.support.design.widget.TextInputEditText
-                        android:id="@+id/edt_order_price"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:background="@null"
-                        android:maxLength="11"
-                        android:hint="@string/text_order_price"
-                        android:inputType="number" />
-                </android.support.design.widget.TextInputLayout>
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/price_unit" />
-
-            </LinearLayout>
-
-            <View style="@style/divider_item_create_order" />
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/bg_edt_create_order_step2"
-                android:orientation="horizontal"
-                android:padding="@dimen/_10dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginRight="@dimen/_10dp"
-                    android:paddingLeft="@dimen/_3dp"
-                    android:src="@drawable/ic_money_grey_24dp" />
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="6">
-
-                    <android.support.design.widget.TextInputEditText
-                        android:id="@+id/edt_ship_price"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:background="@null"
-                        android:maxLength="11"
-                        android:hint="@string/text_ship_price"
-                        android:inputType="number" />
-                </android.support.design.widget.TextInputLayout>
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/price_unit" />
-            </LinearLayout>
-
-            <View style="@style/divider_item_create_order" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/bg_edt_create_order_step2"
-                android:orientation="horizontal"
-                android:padding="@dimen/_10dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginRight="@dimen/_10dp"
-                    android:paddingLeft="@dimen/_3dp"
-                    android:src="@drawable/ic_time_grey_24dp" />
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:orientation="vertical"
+                    android:padding="@dimen/all_padding_medium">
 
                     <TextView
-                        android:id="@+id/text_time"
+                        android:id="@+id/textView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/text_view_margin"
+                        android:text="@string/create_invoice"
+                        android:textSize="@dimen/text_size_title"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/text_view_margin"
                         android:background="@color/bg_edt_create_order_step2"
-                        android:gravity="center_vertical"
-                        android:text="@string/time_order"
-                        android:textSize="@dimen/abc_text_size_medium_material" />
-                </android.support.design.widget.TextInputLayout>
-            </LinearLayout>
+                        android:orientation="horizontal">
 
-            <View style="@style/divider_item_create_order" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="@dimen/all_margin_medium"
+                            android:src="@drawable/ic_invoice_manage_grey_24dp"/>
 
-            <RadioGroup
-                android:id="@+id/rg_pick_time"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/back_ground_light_grey"
-                android:divider="@drawable/divider_radio_group"
-                android:paddingLeft="@dimen/_10dp"
-                android:paddingRight="@dimen/_10dp"
-                android:visibility="gone">
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
 
-                <RadioButton
-                    android:id="@+id/rb_now"
-                    style="@style/rb_create_order"
-                    android:text="@string/pick_time_now" />
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edt_order_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@null"
+                                android:hint="@string/text_order_name"
+                                android:inputType="text"/>
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
 
-                <View style="@style/divider_pick_time_create_order" />
-
-                <RadioButton
-                    android:id="@+id/rb_today_morning"
-                    style="@style/rb_create_order"
-                    android:text="@string/pick_time_today_morning" />
-
-                <View style="@style/divider_pick_time_create_order" />
-
-                <RadioButton
-                    android:id="@+id/rb_today_afternoon"
-                    style="@style/rb_create_order"
-                    android:text="@string/pick_time_today_afternoon" />
-
-                <View style="@style/divider_pick_time_create_order" />
-
-                <RadioButton
-                    android:id="@+id/rb_today_evening"
-                    style="@style/rb_create_order"
-                    android:text="@string/pick_time_today_evening" />
-
-                <View style="@style/divider_pick_time_create_order" />
-
-                <RadioButton
-                    android:id="@+id/rb_today_select"
-                    style="@style/rb_create_order"
-                    android:text="@string/pick_time_today_select" />
-
-                <View style="@style/divider_pick_time_create_order" />
-
-                <RadioButton
-                    android:id="@+id/rb_tomorrow_morning"
-                    style="@style/rb_create_order"
-                    android:text="@string/pick_time_tomorrow_morning" />
-
-                <View style="@style/divider_pick_time_create_order" />
-
-                <RadioButton
-                    android:id="@+id/rb_tomorrow_afternoon"
-                    style="@style/rb_create_order"
-                    android:text="@string/pick_time_tomorrow_afternoon" />
-
-                <View style="@style/divider_pick_time_create_order" />
-
-                <RadioButton
-                    android:id="@+id/rb_tomorrow_evening"
-                    style="@style/rb_create_order"
-                    android:text="@string/pick_time_tomorrow_evening" />
-
-                <View style="@style/divider_pick_time_create_order" />
-
-                <RadioButton
-                    android:id="@+id/rb_tomorrow_select"
-                    style="@style/rb_create_order"
-                    android:text="@string/pick_time_tomorrow_select" />
-
-                <View style="@style/divider_pick_time_create_order" />
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/back_ground_title_grey"
-                android:padding="@dimen/_5dp"
-                android:text="@string/all_customer"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/bg_edt_create_order_step2"
-                android:orientation="horizontal"
-                android:padding="@dimen/_10dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginRight="@dimen/_10dp"
-                    android:paddingLeft="@dimen/_3dp"
-                    android:src="@drawable/ic_person_grey_24dp" />
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <android.support.design.widget.TextInputEditText
-                        android:id="@+id/edt_customer_name"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:background="@null"
-                        android:hint="@string/all_customer_name"
-                        android:inputType="textPersonName"
-                        android:textSize="@dimen/abc_text_size_medium_material" />
-                </android.support.design.widget.TextInputLayout>
-            </LinearLayout>
+                        android:layout_marginBottom="@dimen/text_view_margin"
+                        android:background="@color/bg_edt_create_order_step2"
+                        android:orientation="horizontal"
+                        >
 
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="@dimen/all_margin_medium"
+                            android:paddingLeft="@dimen/_3dp"
+                            android:src="@drawable/ic_weight_grey_24dp"/>
 
-            <View style="@style/divider_item_create_order" />
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/bg_edt_create_order_step2"
-                android:orientation="horizontal"
-                android:padding="@dimen/_10dp">
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edt_order_weight"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@null"
+                                android:hint="@string/text_order_weight"
+                                android:inputType="numberDecimal"/>
+                        </android.support.design.widget.TextInputLayout>
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginRight="@dimen/_10dp"
-                    android:paddingLeft="@dimen/_3dp"
-                    android:src="@drawable/ic_phone" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/invoice_weight_unit"/>
+                    </LinearLayout>
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <android.support.design.widget.TextInputEditText
-                        android:id="@+id/edt_customer_phone"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:background="@null"
-                        android:hint="@string/all_customer_phone"
-                        android:inputType="phone"
-                        android:textSize="@dimen/abc_text_size_medium_material" />
-                </android.support.design.widget.TextInputLayout>
-            </LinearLayout>
+                        android:layout_marginBottom="@dimen/text_view_margin"
 
+                        android:background="@color/bg_edt_create_order_step2"
+                        android:orientation="horizontal">
 
-            <View style="@style/divider_item_create_order" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="@dimen/all_margin_medium"
+                            android:src="@drawable/ic_dollar"/>
 
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/bg_edt_create_order_step2"
-                android:orientation="horizontal"
-                android:padding="@dimen/_10dp">
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edt_order_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@null"
+                                android:hint="@string/text_order_price"
+                                android:inputType="number"
+                                android:maxLength="11"/>
+                        </android.support.design.widget.TextInputLayout>
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginRight="@dimen/_10dp"
-                    android:paddingLeft="@dimen/_3dp"
-                    android:src="@drawable/ic_note_grey_24dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/price_unit"/>
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    </LinearLayout>
 
-                    <android.support.design.widget.TextInputEditText
-                        android:id="@+id/edt_note"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:background="@null"
-                        android:hint="@string/all_note"
-                        android:inputType="text"
-                        android:textSize="@dimen/abc_text_size_medium_material" />
-                </android.support.design.widget.TextInputLayout>
-            </LinearLayout>
+                        android:layout_marginBottom="@dimen/text_view_margin"
+                        android:orientation="horizontal">
 
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="@dimen/all_margin_medium"
+                            android:src="@drawable/ic_dollar"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edt_ship_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@null"
+                                android:hint="@string/text_ship_price"
+                                android:inputType="number"
+                                android:maxLength="11"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/price_unit"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/text_view_margin"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/all_margin_medium">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="@dimen/all_margin_medium"
+                            android:src="@drawable/ic_time_grey_24dp"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/text_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@color/bg_edt_create_order_step2"
+                                android:text="@string/time_order"
+                                android:textSize="@dimen/abc_text_size_medium_material"/>
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/rg_pick_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:paddingRight="@dimen/_10dp"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:id="@+id/rb_now"
+                            style="@style/rb_create_order"
+                            android:text="@string/pick_time_now"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_today_morning"
+                            style="@style/rb_create_order"
+                            android:text="@string/pick_time_today_morning"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_today_afternoon"
+                            style="@style/rb_create_order"
+                            android:text="@string/pick_time_today_afternoon"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_today_evening"
+                            style="@style/rb_create_order"
+                            android:text="@string/pick_time_today_evening"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_today_select"
+                            style="@style/rb_create_order"
+                            android:text="@string/pick_time_today_select"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_tomorrow_morning"
+                            style="@style/rb_create_order"
+                            android:text="@string/pick_time_tomorrow_morning"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_tomorrow_afternoon"
+                            style="@style/rb_create_order"
+                            android:text="@string/pick_time_tomorrow_afternoon"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_tomorrow_evening"
+                            style="@style/rb_create_order"
+                            android:text="@string/pick_time_tomorrow_evening"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_tomorrow_select"
+                            style="@style/rb_create_order"
+                            android:text="@string/pick_time_tomorrow_select"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/all_margin_medium"
+                android:layout_marginTop="@dimen/all_margin_medium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/all_padding_medium">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/text_view_margin"
+                        android:text="@string/create_customer"
+                        android:textSize="@dimen/text_size_title"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/text_view_margin"
+
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="@dimen/all_margin_medium"
+                            android:src="@drawable/ic_customer_grey_24dp"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edt_customer_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="@string/all_customer_name"
+                                android:inputType="textPersonName"
+                                android:textSize="@dimen/abc_text_size_medium_material"/>
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/text_view_margin"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="@dimen/_10dp"
+                            android:src="@drawable/ic_phone"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edt_customer_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="@string/all_customer_phone"
+                                android:inputType="phone"
+                                android:textSize="@dimen/abc_text_size_medium_material"/>
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/text_view_margin"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="@dimen/_10dp"
+                            android:src="@drawable/ic_note_grey_24"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edt_note"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@null"
+                                android:hint="@string/all_note"
+                                android:inputType="text"
+                                android:textSize="@dimen/abc_text_size_medium_material"/>
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
         </LinearLayout>
     </ScrollView>
 
@@ -404,7 +382,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="@string/submit_create_order_fragment" />
+        android:text="@string/submit_create_order_fragment"/>
 </RelativeLayout>

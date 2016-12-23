@@ -289,7 +289,7 @@ public class ShopCreateOrderStep1Fragment extends BaseFragment implements OnMapR
 
         mBtnPickEnd.setImageResource(R.drawable.ic_map_picker_end);
         mImgPickPosition.setImageResource(R.drawable.ic_map_picker_start);
-        mBtnPickStart.setImageResource(R.drawable.ic_done);
+        mBtnPickStart.setImageResource(R.drawable.ic_done_green_24dp);
         removePath();
     }
 
@@ -303,7 +303,7 @@ public class ShopCreateOrderStep1Fragment extends BaseFragment implements OnMapR
         }
         mBtnPickStart.setImageResource(R.drawable.ic_map_picker_start);
         mImgPickPosition.setImageResource(R.drawable.ic_map_picker_end);
-        mBtnPickEnd.setImageResource(R.drawable.ic_done);
+        mBtnPickEnd.setImageResource(R.drawable.ic_done_green_24dp);
         removePath();
     }
 

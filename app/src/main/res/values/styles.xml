@@ -130,12 +130,13 @@
     </style>
 
     <style name="rb_create_order">
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/_5dp</item>
         <item name="android:layout_marginRight">@dimen/_5dp</item>
         <item name="android:layout_marginTop">@dimen/_5dp</item>
         <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/text_grey</item>
         <item name="android:textSize">@dimen/abc_text_size_medium_material</item>
     </style>
 

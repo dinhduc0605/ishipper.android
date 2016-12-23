@@ -211,6 +211,8 @@
     <string name="dialog_delete_message">Xoá</string>
     <string name="all_customer">Khách hàng</string>
     <string name="all_invoice">Đơn hàng</string>
+    <string name="create_customer"><u>Khách hàng</u></string>
+    <string name="create_invoice"><u>Đơn hàng</u></string>
     <string name="activity_filter_msg_start_address">Bạn cần điền đúng thông tin điểm đầu</string>
     <string name="activity_filter_msg_more_info">Bạn cần điền thêm thông tin</string>
     <string name="all_na">Chưa xác định</string>
