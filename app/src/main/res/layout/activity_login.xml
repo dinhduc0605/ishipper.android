@@ -17,9 +17,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/all_margin_large"
-            android:layout_marginTop="@dimen/all_margin_large"
-            android:src="@drawable/img_logo" />
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/img_logo"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -27,12 +26,14 @@
             android:text="@string/username_login"
             android:textColor="@color/white"
             android:textSize="@dimen/text_size_title"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <LinearLayout
             style="@style/AppLayoutInputStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_margin_small"
+
             android:orientation="horizontal">
 
             <Spinner
@@ -40,7 +41,7 @@
                 style="@style/AppSpinner"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@color/back_ground_grey" />
+                android:background="@color/back_ground_grey"/>
 
             <EditText
                 android:id="@+id/edtPhoneNumber"
@@ -51,7 +52,7 @@
                 android:layout_margin="1dp"
                 android:gravity="center_vertical"
                 android:inputType="phone"
-                android:textSize="@dimen/text_size_content" />
+                android:textSize="@dimen/text_size_content"/>
         </LinearLayout>
 
 
@@ -62,7 +63,7 @@
             android:text="@string/all_password"
             android:textColor="@color/white"
             android:textSize="@dimen/text_size_title"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <EditText
             android:id="@+id/edtPassword"
@@ -71,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/all_margin_small"
             android:inputType="textPassword"
-            android:textSize="@dimen/text_size_content" />
+            android:textSize="@dimen/text_size_content"/>
 
         <TextView
             android:id="@+id/btnLogin"
@@ -79,7 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/all_margin_large"
-            android:text="@string/login" />
+            android:text="@string/login"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -93,7 +94,7 @@
                 android:padding="@dimen/all_padding_small"
                 android:text="@string/register"
                 android:textColor="@color/blue"
-                android:textSize="@dimen/text_size_button" />
+                android:textSize="@dimen/text_size_button"/>
 
             <TextView
                 android:id="@+id/btnForgotPass"
@@ -103,48 +104,9 @@
                 android:padding="@dimen/all_padding_small"
                 android:text="@string/activity_login_forgot_pass"
                 android:textColor="@color/white"
-                android:textSize="@dimen/text_size_button" />
+                android:textSize="@dimen/text_size_button"/>
 
         </RelativeLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:paddingTop="@dimen/all_padding_medium">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/all_divider_height"
-            android:layout_marginBottom="@dimen/all_margin_large"
-            android:background="@color/white_20" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/btnShop"
-                style="@style/AppButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/blue"
-                android:text="@string/shop" />
-
-            <TextView
-                android:id="@+id/btnShipper"
-                style="@style/AppButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/all_margin_medium"
-                android:background="@color/color_status_pick"
-                android:text="@string/shipper" />
-
-        </LinearLayout>
-    </LinearLayout>
 </LinearLayout>

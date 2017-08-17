@@ -70,7 +70,7 @@ public class LoginActivity extends BaseActivity implements
         mSpnPrefixPhoneNumber.setOnItemSelectedListener(this);
     }
 
-    @OnClick({R.id.btnShop, R.id.btnShipper, R.id.btnRegister, R.id.btnForgotPass, R.id.btnLogin})
+    @OnClick({R.id.btnRegister, R.id.btnForgotPass, R.id.btnLogin})
     public void onClick(View view) {
         CommonUtils.hideKeyboard(this);
         switch (view.getId()) {

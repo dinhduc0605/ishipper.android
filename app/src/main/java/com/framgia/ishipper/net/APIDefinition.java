@@ -7,8 +7,8 @@ import com.framgia.ishipper.common.Config;
  */
 public class APIDefinition {
 
-    private static final String DEV_URL = "http://ishipper.framgia.vn/";
-    private static final String SOCKET_URL = "ws://ishipper.framgia.vn/";
+    private static final String DEV_URL = "http://www.ishipper.tk";
+    private static final String SOCKET_URL = "http://www.ishipper.tk";
 //    private static final String DEV_URL = "http://192.168.1.142:3000/";
 //    private static final String SOCKET_URL = "http://192.168.1.142:3000/";
     private static final String PROD_URL = "";

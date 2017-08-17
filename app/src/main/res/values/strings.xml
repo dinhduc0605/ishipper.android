@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">iShipper</string>
-    <string name="shop">Shop</string>
-    <string name="shipper">Shipper</string>
+    <string name="shop">Facebook</string>
+    <string name="shipper">Google</string>
 
     <!--    Permissions    -->
     <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
